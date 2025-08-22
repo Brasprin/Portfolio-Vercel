@@ -98,10 +98,12 @@ export default function Resume() {
                 <tr><td>STINTSY</td><td>Advanced Intelligent Systems</td></tr>
                 <tr><td>STDISCM*</td><td>Distributed Computing</td></tr>
                 <tr><td>STCLOUD</td><td>Introduction to Cloud Computing</td></tr>
-                <tr><td>DSGNPAT</td><td>Design Patterns</td></tr>
+                <tr><td>STMETHD*</td><td>ST Research Methods</td></tr>
                 <tr><td>SOLLDA1</td><td>Business Intelligence and Data Analytics</td></tr>
                 <tr><td>SOLLDT1</td><td>Digital Transformation for Executives</td></tr>
                 <tr><td>SOLLDV1</td><td>DevOps</td></tr>
+                <tr><td>DSGNPAT</td><td>Design Patterns</td></tr>
+                {/* <tr><td>THS-ST1-3</td><td>Thesis in Software Technology 1–3</td></tr> */}
               </tbody>
             </table>
           </div>
