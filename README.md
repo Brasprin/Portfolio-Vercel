@@ -8,5 +8,5 @@ This is a personal portfolio project built using [Create React App](https://gith
 
 To run the project locally:
 
-npm install
-npm start
+1. npm install
+1. npm start
