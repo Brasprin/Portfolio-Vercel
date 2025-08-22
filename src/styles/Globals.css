@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@400;700&display=swap');
+
+* {
+    font-family: 'Karma', sans-serif;
+    
+}
+
+
+body {
+    padding-left: 300px; 
+
+}
+
+@media (max-width: 1000px) {
+    body {
+        padding-left: 0 !important;
+        padding-right:0 !important;
+      }
+    .sidebar-toggle-btn{
+        display: block !important;
+
+    }
+
+}
+
+.sidebar-toggle-btn {
+    background-color: white;
+    display: none;
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size:4rem;
+    cursor: pointer;
+    padding-left: 2rem;
+}
+
+hr {
+    border: none;
+    height: 0.3rem;
+    background-color: black;
+}

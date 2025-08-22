@@ -1,0 +1,171 @@
+.container {
+  align-items: center;
+  padding-top: 1rem;
+  padding-left: 3rem;
+  padding-right: 5rem;
+  flex-direction: column;
+}
+
+/* Section titles */
+h2 {
+  font-size: 3.3rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+hr {
+  margin-bottom: 2rem;
+}
+
+section {
+  margin-bottom: -1rem;
+}
+
+/* Education Section */
+.educationEntry {
+  margin-bottom: 1.5rem;
+}
+
+.educationLine {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+}
+
+.school {
+  flex: 1;
+}
+
+.degreeInfo {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  font-style: italic;
+  font-size: 1.3rem;
+}
+
+.degreeDate {
+  font-style: italic;
+  font-size: 1.3rem;
+}
+
+/* Experience Section */
+.experience p {
+  margin-top: -1.5rem;
+  font-weight: normal;
+}
+
+/* Skills Section */
+.skills p {
+  margin-top: -2rem;
+  margin-bottom: -1rem;
+}
+
+/* Download Button */
+.downloadResume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.downloadResume button {
+  background: linear-gradient(45deg,
+    rgba(255, 0, 0, 1),
+    rgba(255, 0, 180, 1),
+    rgba(0, 100, 200, 1));
+  color: white;
+  padding: 0.5rem 1.2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.downloadResume button:hover {
+  background: linear-gradient(45deg,
+    rgba(255, 0, 0, 0.8),
+    rgba(255, 0, 180, 0.8),
+    rgba(0, 100, 200, 0.8));
+}
+
+/* Courses Tables */
+.coursesRow {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.coursesCol {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  margin-top: -2rem;
+}
+
+.coursesTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: -1rem;
+}
+
+.coursesTable th,
+.coursesTable td {
+  border: 1px solid #ccc;
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+}
+
+.coursesTable th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.coursesTable td:first-child,
+.coursesTable th:first-child {
+  font-weight: bold;
+}
+
+.coursesTable tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+p,
+h3,
+li {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .degreeInfo {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .degreeDate {
+    margin-left: 0;
+    margin-top: 0.3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .coursesRow {
+    flex-direction: column;
+  }
+}
+
+/* To remove */
+
+.note {
+  font-style: italic;
+  font-size: 1rem;
+  color: #555;
+  margin-top: -1.2rem;
+  margin-bottom: 1.5rem;
+}

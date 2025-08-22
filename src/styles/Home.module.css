@@ -1,0 +1,70 @@
+
+body {
+    padding-right: 2.5rem; 
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 9rem);
+    padding: 1.5rem;
+    align-items: center; 
+    box-sizing: border-box;
+}
+
+
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.textSection{
+    flex: 1 1 300px;
+    padding: 0 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0rem;
+}
+
+.profile {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+.profile img {
+    width: 30rem;  
+    height: auto;
+    border-radius: 50%;
+}
+
+
+h1 {
+    font-size: clamp(3rem, 7.5vw, 7.5rem);
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+
+
+.subtitle {
+    font-size: clamp(1.5rem, 2.5vw, 1.8rem);
+    font-weight: 600;
+    color: #555;
+    white-space: normal;
+    margin: 0 0 3rem 0;
+}
+
+.description {
+    font-size: 2.4rem;
+    font-size: clamp(2rem, 3vw, 2.4rem);
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
