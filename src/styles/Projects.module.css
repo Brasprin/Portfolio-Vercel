@@ -1,21 +1,8 @@
-.projectsContainer {
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding-top: 4rem;
-  padding-left: 3rem;
-  padding-right: 5rem;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
 .title h1 {
   font-size: 5.4rem;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  margin-bottom: -1rem;
-  margin-top: -1.3rem;
+  margin-top: 2rem;
 }
 
 .project {
@@ -31,6 +18,7 @@
   font-size: 2.8rem;
   font-weight: bold;
   margin-bottom: -0.9vh;
+
 }
 
 .project p {

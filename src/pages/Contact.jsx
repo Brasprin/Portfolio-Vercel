@@ -6,8 +6,8 @@ const Contact = () => {
     <div className={styles.contactContainer}>
       {/* Left Side */}
       <div className={styles.contactInfo}>
-        <h1>Get in Touch!</h1>
-        <p className={styles.subheading}>I'd love to hear from you!</p>
+        <h1>Get in Touch</h1>
+        <p className={styles.subheading}>I'd love to hear from you.</p>
         <p className={styles.description}>Feel free to reach out with any inquiries or simply to say hi! </p>
         <p className={styles.contactDetails}>📞 +63 9777377606</p>
         <p className={styles.contactDetails}>📧 tamseandrei@gmail.com</p>
@@ -47,7 +47,8 @@ const Contact = () => {
 
         <label htmlFor="message">Message</label>
         <textarea id="message" name="message" rows="5" required onInput={handleAutoResize} />
-          <label htmlFor="role">I’m reaching out as a..</label>
+          
+          
           
           <select id="role" name="role" required>
             <option value="">Select one</option>

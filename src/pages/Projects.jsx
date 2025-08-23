@@ -54,7 +54,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className={styles.projectsContainer}>
+    <>
       <div className={styles.title}>
         <h1>School Projects</h1>
       </div>
@@ -73,7 +73,7 @@ const Projects = () => {
           {index !== projects.length - 1 && <hr />}
         </div>
       ))}
-    </div>
+    </>
   );
 };
 

@@ -1,28 +1,19 @@
-.container {
-    display: flex;
-    justify-content: center;
-    min-height: calc(100vh - 9rem);
-    align-items: center; 
-    box-sizing: border-box;
-    padding-right: 5.3rem; 
-}
-
-
 
 .content {
     display: flex;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+    min-height: calc(100vh - 9rem);
+    
 }
 
 .textSection{
     flex: 1 1 300px;
-    padding: 0 2vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 0rem;
+    margin-right: 3rem;
 }
 
 .profile {
@@ -61,3 +52,5 @@ h1 {
     color: #333;
     margin: 0;
 }
+
+

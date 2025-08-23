@@ -105,18 +105,34 @@
 
 
 #mobile-sidebarToggle {
-    display: block;
+    display: none;
     border: none;
-    background-color: black;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 4rem;
     cursor: pointer;
-    padding-left: 2.5rem;
     padding-top: 0.8rem;
-
-    
-
-    
 }
 
 
+@media (max-width: 1000px) {
+    body {
+        padding-left: 0 !important;
+        padding-right:0 !important;
+      }
+    .sidebar-toggle-btn{
+        display: inline-flex !important;
+
+    }
+
+}
+
+.sidebar-toggle-btn {
+    background-color: white;
+    display: none;
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size:4rem;
+    cursor: pointer;
+    padding-left: 2.8rem;
+}
