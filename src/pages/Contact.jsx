@@ -1,5 +1,6 @@
 import styles from '../styles/Contact.module.css';
 
+
 const Contact = () => {
   return (
     <div className={styles.contactContainer}>
@@ -32,11 +33,11 @@ const Contact = () => {
       >
         <div className={styles.inputRow}>
           <div>
-            <label htmlFor="first-name">First Name</label>
+            <label htmlFor="first-name">First Name *</label>
             <input type="text" id="first-name" name="first-name" required />
           </div>
           <div>
-            <label htmlFor="last-name">Last Name</label>
+            <label htmlFor="last-name">Last Name * </label>
             <input type="text" id="last-name" name="last-name" required />
           </div>
         </div>
@@ -45,21 +46,29 @@ const Contact = () => {
         <input type="email" id="email" name="email" required />
 
         <label htmlFor="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <div className={styles.checkboxGroup}>
-          <p>Which are you?</p>
-          <label><input type="checkbox" name="role[]" value="Student" /> Student</label>
-          <label><input type="checkbox" name="role[]" value="Recruiter" /> Recruiter</label>
-          <label><input type="checkbox" name="role[]" value="Employer" /> Employer</label>
-          <label><input type="checkbox" name="role[]" value="Freelancer/Client" /> Freelancer/Client</label>
-        </div>
+        <textarea id="message" name="message" rows="5" required onInput={handleAutoResize} />
+          <label htmlFor="role">I’m reaching out as a..</label>
+          
+          <select id="role" name="role" required>
+            <option value="">Select one</option>
+            <option value="Student">Student</option>
+            <option value="Recruiter">Recruiter</option>
+            <option value="Employer">Employer</option>
+            <option value="Client">Freelancer/Client</option>
+          </select>
 
         <button type="submit">Send</button>
       </form>
 
     </div>
   );
+};
+
+const handleAutoResize = (e) => {
+  const el = e.target;
+  el.style.height = "auto";
+  el.style.height = Math.min(el.scrollHeight, 300) + "px";
+  el.style.overflowY = el.scrollHeight > 300 ? "auto" : "hidden";
 };
 
 export default Contact;
