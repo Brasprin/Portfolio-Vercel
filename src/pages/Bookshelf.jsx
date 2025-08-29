@@ -5,11 +5,26 @@ import styles from '../styles/Bookshelf.module.css';
 export default function Bookshelf() {
   const [hoveredCard, setHoveredCard] = useState(null);
   const [sortBy, setSortBy] = useState('recent'); 
+  const [currentPage, setCurrentPage] = useState(1);
+  const [searchQuery, setSearchQuery] = useState('');
+  const booksPerPage = 15;
 
   const books = getBooks();
 
-  // Sort books dynamically 
-  const sortedBooks = [...books].sort((a, b) => {
+  //Filter 
+  const filteredBooks = books.filter((book) => {
+    const q = searchQuery.toLowerCase();
+    return (
+      book.title.toLowerCase().includes(q) ||
+      book.author.toLowerCase().includes(q) ||
+      book.note.toLowerCase().includes(q) ||
+      book.takeaway.toLowerCase().includes(q)
+    );
+  });
+
+
+  // Sort books
+  const sortedBooks = [...filteredBooks].sort((a, b) => {
     switch (sortBy) {
       case 'recent':
         return b.id - a.id;
@@ -26,7 +41,60 @@ export default function Bookshelf() {
     }
   });
 
-  
+  // Pagination
+  const totalPages = Math.ceil(sortedBooks.length / booksPerPage);
+  const startIndex = (currentPage - 1) * booksPerPage;
+  const endIndex = startIndex + booksPerPage;
+  const currentBooks = sortedBooks.slice(startIndex, endIndex);
+
+
+  // Handlers
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleSortChange = (newSort) => {
+    setSortBy(newSort);
+    setCurrentPage(1);
+  };
+
+  const handleSearchChange = (query) => {
+    setSearchQuery(query);
+    setCurrentPage(1); // reset to page 1 when searching
+  };
+
+  const clearSearch = () => {
+    setSearchQuery('');
+    setCurrentPage(1);
+  };
+
+  // Pagination numbers
+  const getPageNumbers = () => {
+    const pageNumbers = [];
+    const maxVisiblePages = 5;
+
+    if (totalPages <= maxVisiblePages) {
+      for (let i = 1; i <= totalPages; i++) pageNumbers.push(i);
+    } else {
+      const start = Math.max(1, currentPage - 2);
+      const end = Math.min(totalPages, start + maxVisiblePages - 1);
+
+      if (start > 1) {
+        pageNumbers.push(1);
+        if (start > 2) pageNumbers.push('...');
+      }
+
+      for (let i = start; i <= end; i++) pageNumbers.push(i);
+
+      if (end < totalPages) {
+        if (end < totalPages - 1) pageNumbers.push('...');
+        pageNumbers.push(totalPages);
+      }
+    }
+    return pageNumbers;
+  };
+
   return (
     <div className={styles.pageContainer}>
       <div className={styles.maxWidth}>
@@ -38,28 +106,66 @@ export default function Bookshelf() {
           </p>
         </div>
 
-        {/* Sort Dropdown */}
-        <div className={styles.sortContainer}>
-          <label htmlFor="sortSelect" className={styles.sortLabel}>
-            Sort by:
-          </label>
-          <select 
-            id="sortSelect"
-            value={sortBy} 
-            onChange={(e) => setSortBy(e.target.value)}
-            className={styles.sortSelect}
-          >
-            <option value="recent">Most Recently Read</option>
-            <option value="oldest">Least Recently Read</option>
-            <option value="rating">Highest Rating</option>
-            <option value="title">Title (A-Z)</option>
-            <option value="author">Author (A-Z)</option>
-          </select>
-        </div>
+        <div className={styles.controlsContainer}>
+          {/* Pagination Info */}
+            <div className={styles.paginationInfo}>
+              <p>
+                Showing {startIndex + 1}-{Math.min(endIndex, sortedBooks.length)} of {sortedBooks.length} books
+              </p>
+            </div>
 
+          {/* Search Bar */}
+            <div className={styles.searchContainer}>
+              <div className={styles.searchInputWrapper}>
+                <input
+                  type="text"
+                  placeholder="Search books by title, author, notes, or takeaways..."
+                  value={searchQuery}
+                  onChange={(e) => handleSearchChange(e.target.value)}
+                  className={styles.searchInput}
+                />
+                {searchQuery && (
+                  <button
+                    onClick={clearSearch}
+                    className={styles.clearButton}
+                    title="Clear search"
+                  >
+                    ✕
+                  </button>
+                )}
+              </div>
+              {searchQuery && (
+                <p className={styles.searchResults}>
+                  Found {sortedBooks.length} book{sortedBooks.length !== 1 ? 's' : ''} matching "{searchQuery}"
+                </p>
+              )}
+            </div>
+
+            
+          {/* Sort Dropdown */}
+            <div className={styles.sortContainer}>
+              <label htmlFor="sortSelect" className={styles.sortLabel}>
+                Sort by:
+              </label>
+              <select 
+                id="sortSelect"
+                value={sortBy} 
+                onChange={(e) => { setSortBy(e.target.value); setCurrentPage(1); }}
+                className={styles.sortSelect}
+              >
+                <option value="recent">Most Recently Read</option>
+                <option value="oldest">Least Recently Read</option>
+                <option value="rating">Highest Rating</option>
+                <option value="title">Title (A-Z)</option>
+                <option value="author">Author (A-Z)</option>
+              </select>
+            </div>
+            
+          </div>
+        </div>
         {/* Books Grid */}
         <div className={styles.grid}>
-          {sortedBooks.map((book) => (
+          {currentBooks.map((book) => (
             <div
               key={book.id}
               className={`${styles.card} ${hoveredCard === book.id ? styles.cardHover : ''}`}
@@ -98,11 +204,13 @@ export default function Bookshelf() {
           ))}
         </div>
 
-        {/* Stats Section */}
+         {/* Stats Section */}
         <div className={styles.stats}>
           <div className={styles.statsGrid}>
             <div className={styles.statItem}>
-              <div className={`${styles.statNumber} ${styles.statBlue}`}>{books.length}</div>
+              <div className={`${styles.statNumber} ${styles.statBlue}`}>
+                {books.length}
+              </div>
               <div className={styles.statLabel}>Books Read</div>
             </div>
             <div className={styles.statItem}>
@@ -120,23 +228,66 @@ export default function Bookshelf() {
           </div>
         </div>
 
+
         {/* Footer */}
         <div className={styles.footer}>
-          <p>This bookshelf is a testament to my continuous pursuit of learning and growth...</p>
+          <p>
+            This bookshelf reflects my continuous journey of learning and growth 📚
+          </p>
         </div>
+
+
+        {/* Pagination Controls */}
+        {totalPages > 1 && (
+          <div className={styles.pagination}>
+            <button
+              onClick={() => handlePageChange(currentPage - 1)}
+              disabled={currentPage === 1}
+              className={`${styles.paginationBtn} ${styles.paginationPrev}`}
+            >
+              Previous
+            </button>
+
+            <div className={styles.paginationNumbers}>
+              {getPageNumbers().map((pageNum, index) =>
+                pageNum === '...' ? (
+                  <span key={index} className={styles.paginationDots}>...</span>
+                ) : (
+                  <button
+                    key={pageNum}
+                    onClick={() => handlePageChange(pageNum)}
+                    className={`${styles.paginationBtn} ${styles.paginationNumber} ${
+                      currentPage === pageNum ? styles.paginationActive : ''
+                    }`}
+                  >
+                    {pageNum}
+                  </button>
+                )
+              )}
+            </div>
+
+            <button
+              onClick={() => handlePageChange(currentPage + 1)}
+              disabled={currentPage === totalPages}
+              className={`${styles.paginationBtn} ${styles.paginationNext}`}
+            >
+              Next
+            </button>
+          </div>
+        )}
+
+
+
       </div>
-    </div>
   );
 
-  // Helper Functions
+  // Helpers
   function renderStars(rating) {
     return Array.from({ length: 5 }, (_, i) => (
-      <Star
-        key={i}
-        className={`${styles.star} ${i < rating ? styles.starFilled : ''}`}
-      />
+      <Star key={i} className={`${styles.star} ${i < rating ? styles.starFilled : ''}`} />
     ));
   }
+
 
   function getBooks() {
     return [
@@ -207,9 +358,9 @@ export default function Bookshelf() {
       { id: 67, title: "How to Become a Straight-A Student", author: "Cal Newport", year: "2006", readIn: 2025, rating: 5, coverColor: "purple", note: "Blank", takeaway: "Blank" },
       { id: 68, title: "The Magic of Thinking Big", author: "David J. Schwartz", year: "1959", readIn: 2025, rating: 5, coverColor: "orange", note: "Blank", takeaway: "Blank" },
       { id: 69, title: "The Millionaire Fastlane", author: "MJ DeMarco", year: "2011", readIn: 2025, rating: 5, coverColor: "blue", note: "Blank", takeaway: "Blank" },
-      { id: 70, title: "The 5AM Club", author: "Robin Sharma", year: "2018", readIn: "2022", rating: 5, coverColor: "green", note: "Blank", takeaway: "Blank" },
       { id: 71, title: "Men Are from Mars, Women Are from Venus", author: "John Gray", year: "1992", readIn: 2025, rating: 4, coverColor: "purple", note: "Blank", takeaway: "Blank" },
-      { id: 72, title: "Mind Management, Not Time Management", author: "David Kadavy", year: "2016", readIn: 2025, rating: 2, coverColor: "orange", note: "Blank", takeaway: "Blank" }
+      { id: 72, title: "Mind Management, Not Time Management", author: "David Kadavy", year: "2016", readIn: 2025, rating: 2, coverColor: "orange", note: "Blank", takeaway: "Blank" },
+      { id: 73, title: "The 5AM Club", author: "Robin Sharma", year: "2018", readIn: "2025", rating: 5, coverColor: "green", note: "Blank", takeaway: "Blank" },
     ];
   }
 }
