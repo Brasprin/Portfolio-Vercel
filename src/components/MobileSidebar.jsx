@@ -16,6 +16,7 @@ export default function MobileSidebar({ open, onClose }) {
           <li><Link to="/projects" onClick={onClose}>Projects</Link></li>
           <li><Link to="/resume" onClick={onClose}>Resume</Link></li>
           <li><Link to="/contact" onClick={onClose}>Contact</Link></li>
+          <li><Link to="/bookshelf" onClick={onClose}>Bookshelf</Link></li>
         </ul>
 
         <div className="mobile-social-icons">

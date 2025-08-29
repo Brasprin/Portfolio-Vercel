@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
+import Bookshelf from './pages/Bookshelf';
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="projects" element={<Projects />} />
           <Route path="resume" element={<Resume />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="bookshelf" element={<Bookshelf />} />
         </Route>
       </Routes>
     </Router>

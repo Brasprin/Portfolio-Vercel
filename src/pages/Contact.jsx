@@ -49,7 +49,7 @@ const Contact = () => {
         <textarea id="message" name="message" rows="5" required onInput={handleAutoResize} />
           
           
-          
+        <label for="role">Contacting as</label>
           <select id="role" name="role" required>
             <option value="">Select one</option>
             <option value="Student">Student</option>

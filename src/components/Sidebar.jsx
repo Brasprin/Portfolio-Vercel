@@ -12,6 +12,7 @@ export default function Sidebar() {
             <li><Link to="/projects">Projects</Link></li>
             <li><Link to="/resume">Resume</Link></li>
             <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/bookshelf">Bookshelf</Link></li>
       </ul>
 
       <div className="social-icons">

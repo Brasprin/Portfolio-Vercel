@@ -1,0 +1,295 @@
+/* Container & Layout */
+.maxWidth {
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 48px;
+  padding-top: 2rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.subtitle {
+  color: #6b7280;
+  font-size: 1.125rem;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  gap: 24px;
+  margin-bottom: 64px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Ensure max 5 col */
+@media (min-width: 1500px) {
+  .grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* Card Styles */
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cardHover {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+  transform: translateY(-8px);
+}
+
+/* Book Cover */
+.cover {
+  height: 192px;
+  position: relative;
+  overflow: hidden;
+}
+
+.coverBlue {
+  background: linear-gradient(135deg, #60a5fa, #2563eb);
+}
+
+.coverGreen {
+  background: linear-gradient(135deg, #4ade80, #16a34a);
+}
+
+.coverPurple {
+  background: linear-gradient(135deg, #a78bfa, #7c3aed);
+}
+
+.coverOrange {
+  background: linear-gradient(135deg, #fb923c, #ea580c);
+}
+
+.coverOverlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.coverContent {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+}
+
+.coverTitle {
+  color: white;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 4px;
+  margin: 0 0 4px 0;
+}
+
+.coverAuthor {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* Badge Date*/
+.badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  border-radius: 50px;
+  padding: 4px 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.badgeIcon {
+  width: 12px;
+  height: 12px;
+  color: white;
+}
+
+.badgeText {
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding-top: 0.12rem;
+}
+
+/* Content */
+.content {
+  padding: 20px;
+}
+
+/* Rating */
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  width: 16px;
+  height: 16px;
+  color: #d1d5db;
+}
+
+.starFilled {
+  color: #fbbf24;
+  fill: #fbbf24;
+}
+
+.ratingText {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+/* Year */
+.year {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+
+/* Note */
+.noteContainer {
+  margin-bottom: 16px;
+}
+
+.note {
+  color: #374151;
+  font-size: 0.875rem;
+  font-style: italic;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Takeaway */
+.takeawayContainer {
+  border-top: 1px solid #f3f4f6;
+  padding-top: 16px;
+}
+
+.takeawayLabel {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+
+.takeawayText {
+  font-size: 0.875rem;
+  color: #374151;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Stats Section */
+.stats {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  padding: 32px;
+  margin-bottom: 48px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 24px;
+  text-align: center;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statNumber {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.statBlue {
+  color: #2563eb;
+}
+
+.statGreen {
+  color: #16a34a;
+}
+
+.statPurple {
+  color: #7c3aed;
+}
+
+.statLabel {
+  color: #6b7280;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 0.875rem;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .stats {
+    padding: 24px;
+  }
+  
+  .statsGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
