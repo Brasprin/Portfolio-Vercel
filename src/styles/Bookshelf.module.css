@@ -11,20 +11,57 @@
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: bold;
   color: #1f2937;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
+  
 }
 
 .subtitle {
   color: #6b7280;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
 }
+
+/* Sort Dropdown */
+.sortContainer {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;        
+  justify-content: flex-end;
+}
+.sortLabel {
+  font-size: 0.875rem;
+  color: #374151;
+  font-weight: 500;
+}
+
+.sortSelect {
+  padding: 8px 16px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  background-color: white;
+  color: #374151;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.sortSelect:hover {
+  border-color: #2563eb;
+}
+
+.sortSelect:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
 
 /* Grid Layout */
 .grid {
@@ -60,7 +97,7 @@
 
 /* Book Cover */
 .cover {
-  height: 192px;
+  height: 220px;
   position: relative;
   overflow: hidden;
 }
@@ -97,7 +134,7 @@
 .coverTitle {
   color: white;
   font-weight: bold;
-  font-size: 1.125rem;
+  font-size: 1.23rem;
   line-height: 1.4;
   margin-bottom: 4px;
   margin: 0 0 4px 0;
@@ -105,7 +142,7 @@
 
 .coverAuthor {
   color: rgba(255, 255, 255, 0.9);
-  font-size: 0.875rem;
+  font-size: 1rem;
   margin: 0;
 }
 
@@ -117,21 +154,21 @@
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(4px);
   border-radius: 50px;
-  padding: 4px 12px;
+  padding: 5px 14px;
   display: flex;
   align-items: center;
   gap: 4px;
 }
 
 .badgeIcon {
-  width: 12px;
-  height: 12px;
+  width: 13px;
+  height: 13px;
   color: white;
 }
 
 .badgeText {
   color: white;
-  font-size: 0.75rem;
+  font-size: 0.79rem;
   font-weight: 500;
   padding-top: 0.12rem;
 }
@@ -155,8 +192,8 @@
 }
 
 .star {
-  width: 16px;
-  height: 16px;
+  width: 17px;
+  height: 17px;
   color: #d1d5db;
 }
 
@@ -166,13 +203,14 @@
 }
 
 .ratingText {
-  font-size: 0.875rem;
+  font-size: 0.89rem;
   color: #6b7280;
+  margin-top: 3px;
 }
 
 /* Year */
 .year {
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   color: #9ca3af;
   margin-bottom: 12px;
   margin-top: 0;
@@ -185,7 +223,7 @@
 
 .note {
   color: #374151;
-  font-size: 0.875rem;
+  font-size: 0.975rem;
   font-style: italic;
   line-height: 1.5;
   margin: 0;
@@ -198,7 +236,7 @@
 }
 
 .takeawayLabel {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   color: #9ca3af;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -208,7 +246,7 @@
 }
 
 .takeawayText {
-  font-size: 0.875rem;
+  font-size: 0.975rem;
   color: #374151;
   font-weight: 500;
   margin: 0;
