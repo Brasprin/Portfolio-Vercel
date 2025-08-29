@@ -291,31 +291,20 @@
 
 /* Book Cover */
 .cover {
-  height: 220px;
+  height: 230px;
   position: relative;
   overflow: hidden;
 }
 
-.coverBlue {
-  background: linear-gradient(135deg, #60a5fa, #2563eb);
+.coverImage {
+width: 100%;
+height: 100%;
+object-fit: cover; 
 }
-
-.coverGreen {
-  background: linear-gradient(135deg, #4ade80, #16a34a);
-}
-
-.coverPurple {
-  background: linear-gradient(135deg, #a78bfa, #7c3aed);
-}
-
-.coverOrange {
-  background: linear-gradient(135deg, #fb923c, #ea580c);
-}
-
 .coverOverlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 .coverContent {

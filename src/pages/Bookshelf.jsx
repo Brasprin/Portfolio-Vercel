@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Star, Calendar } from 'lucide-react';
 import styles from '../styles/Bookshelf.module.css';
-import { getBooks } from "../data/Books";
+import { getBooks } from "../datas/Books";
 
 export default function Bookshelf() {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -174,7 +174,13 @@ export default function Bookshelf() {
               onMouseLeave={() => setHoveredCard(null)}
             >
               {/* Book Cover */}
-              <div className={`${styles.cover} ${styles[`cover${book.coverColor.charAt(0).toUpperCase() + book.coverColor.slice(1)}`]}`}>
+              <div className={styles.cover}>
+                <img src={book.coverImage} alt={book.title} className={styles.coverImage} />
+                <div className={styles.coverOverlay}></div>
+                <div className={styles.coverContent}>
+                  <h3 className={styles.coverTitle}>{book.title}</h3>
+                  <p className={styles.coverAuthor}>{book.author.join(", ")}</p>
+              </div>
                 <div className={styles.coverOverlay}></div>
                 <div className={styles.coverContent}>
                   <h3 className={styles.coverTitle}>{book.title}</h3>
