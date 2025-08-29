@@ -2,37 +2,37 @@
 export function getBooks() {
   return [
     {
-      id: 1, title: "The Subtle Art of Not Giving a F*ck", author: ["Mark Manson"], year: 2016, readIn: "2022", rating: 4, coverImage: "/images/1.jpg",
+      id: 1, title: "The Subtle Art of Not Giving a F*ck", author: ["Mark Manson"], year: 2016, readIn: 2022, rating: 4, coverImage: "/images/1.jpg",
       note: "Blank",
       takeaway: "Blank"
     },
     {
-      id: 2, title: "Everything Is F*cked: A Book About Hope", author: ["Mark Manson"], year: 2019, readIn: "2022", rating: 4, coverImage: "/images/2.jpg",
+      id: 2, title: "Everything Is F*cked: A Book About Hope", author: ["Mark Manson"], year: 2019, readIn: 2022, rating: 4, coverImage: "/images/2.jpg",
       note: "Blank",
       takeaway: "Blank"
     },
     {
-      id: 3, title: "Rich Dad Poor Dad", author: ["Robert Kiyosaki"], year: 1997, readIn: "2022", rating: 5, coverImage: "/images/3.jpg",
+      id: 3, title: "Rich Dad Poor Dad", author: ["Robert Kiyosaki"], year: 1997, readIn: 2022, rating: 5, coverImage: "/images/3.jpg",
       note: "Blank",
       takeaway: "Blank"
     },
     {
-      id: 4, title: "Atomic Habits", author: ["James Clear"], year: 2018, readIn: "2022", rating: 5, coverImage: "/images/4.jpg",
+      id: 4, title: "Atomic Habits", author: ["James Clear"], year: 2018, readIn: 2022, rating: 5, coverImage: "/images/4.jpg",
       note: "Blank",
       takeaway: "Blank"
     },
     {
-      id: 5, title: "Rich Dad's Cashflow Quadrant", author: ["Robert Kiyosaki"], year: 1998, readIn: "2022", rating: 5, coverImage: "/images/5.jpg" ,
+      id: 5, title: "Rich Dad's Cashflow Quadrant", author: ["Robert Kiyosaki"], year: 1998, readIn: 2022, rating: 5, coverImage: "/images/5.jpg" ,
       note: "Blank",
       takeaway: "Blank"
     },
     {
-      id: 6, title: "Think and Grow Rich", author: ["Napoleon Hill"], year: 1937, readIn: "2022", rating: 4, coverImage: "/images/6.jpg" ,
+      id: 6, title: "Think and Grow Rich", author: ["Napoleon Hill"], year: 1937, readIn: 2022, rating: 4, coverImage: "/images/6.jpg" ,
       note: "Blank",
       takeaway: "Blank"
     },
     {
-      id: 7, title: "The 7 Habits of Highly Effective People", author: ["Stephen Covey"], year: 1989, readIn: "2022", rating: 5, coverImage: "/images/7.jpg",
+      id: 7, title: "The 7 Habits of Highly Effective People", author: ["Stephen Covey"], year: 1989, readIn: 2022, rating: 5, coverImage: "/images/7.jpg",
       note: "Blank",
       takeaway: "Blank"
     },
@@ -42,7 +42,7 @@ export function getBooks() {
       takeaway: "Blank"
     },
     {
-      id: 9, title: "Who Moved My Cheese?", author: ["Spencer Johnson"], year: 1998, readIn: "2022", rating: 5, coverImage: "/images/9.jpg",
+      id: 9, title: "Who Moved My Cheese?", author: ["Spencer Johnson"], year: 1998, readIn: 2022, rating: 5, coverImage: "/images/9.jpg",
       note: "Blank",
       takeaway: "Blank"
     },
@@ -247,7 +247,7 @@ export function getBooks() {
       takeaway: "Blank"
     },
     {
-      id: 50, title: "The Concise 48 Laws Of Power", author: ["Robert Greene"], year: 2002, readIn: "2022", rating: 5, coverImage: "/images/50.jpg",
+      id: 50, title: "The Concise 48 Laws Of Power", author: ["Robert Greene"], year: 2002, readIn: 2022, rating: 5, coverImage: "/images/50.jpg",
       note: "Blank",
       takeaway: "Blank"
     },
@@ -347,7 +347,7 @@ export function getBooks() {
       takeaway: "Blank"
     },
     {
-      id: 70, title: "The 5AM Club", author: ["Robin Sharma"], year: 2018, readIn: "2025", rating: 5, coverImage: "/images/70.jpg",
+      id: 70, title: "The 5AM Club", author: ["Robin Sharma"], year: 2018, readIn: 2025, rating: 5, coverImage: "/images/70.jpg",
       note: "Blank",
       takeaway: "Blank"
     }

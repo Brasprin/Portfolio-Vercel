@@ -32,6 +32,11 @@ export default function Bookshelf() {
       case 'oldest':
         return a.id - b.id;
       case 'rating':
+        // Primary: rating descending
+        // Secondary: (most recent first)
+        if (b.rating === a.rating) {
+          return b.readIn - a.readIn;
+        }
         return b.rating - a.rating;
       case 'title':
         return a.title.localeCompare(b.title);
@@ -151,7 +156,7 @@ export default function Bookshelf() {
               <select 
                 id="sortSelect"
                 value={sortBy} 
-                onChange={(e) => { setSortBy(e.target.value); setCurrentPage(1); }}
+                onChange={(e) => handleSortChange(e.target.value)}
                 className={styles.sortSelect}
               >
                 <option value="recent">Most Recently Read</option>
