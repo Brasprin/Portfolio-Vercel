@@ -33,9 +33,9 @@ export default function Bookshelf() {
         return a.id - b.id;
       case 'rating':
         // Primary: rating descending
-        // Secondary: (most recent first)
+        // Secondary: title alphabetically
         if (b.rating === a.rating) {
-          return b.readIn - a.readIn;
+          return a.title.localeCompare(b.title);
         }
         return b.rating - a.rating;
       case 'title':

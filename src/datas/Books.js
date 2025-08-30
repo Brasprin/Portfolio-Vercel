@@ -3,218 +3,218 @@ export function getBooks() {
   return [
     {
       id: 1, title: "The Subtle Art of Not Giving a F*ck", author: ["Mark Manson"], year: 2016, readIn: 2022, rating: 4, coverImage: "/images/1.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "N/A",
+      takeaway: "N/A"
     },
     {
       id: 2, title: "Everything Is F*cked: A Book About Hope", author: ["Mark Manson"], year: 2019, readIn: 2022, rating: 4, coverImage: "/images/2.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "N/A",
+      takeaway: "N/A"
     },
     {
       id: 3, title: "Rich Dad Poor Dad", author: ["Robert Kiyosaki"], year: 1997, readIn: 2022, rating: 5, coverImage: "/images/3.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "N/A",
+      takeaway: "N/A"
     },
     {
       id: 4, title: "Atomic Habits", author: ["James Clear"], year: 2018, readIn: 2022, rating: 5, coverImage: "/images/4.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "N/A",
+      takeaway: "N/A"
     },
     {
       id: 5, title: "Rich Dad's Cashflow Quadrant", author: ["Robert Kiyosaki"], year: 1998, readIn: 2022, rating: 5, coverImage: "/images/5.jpg" ,
-      note: "Blank",
-      takeaway: "Blank"
+      note: "N/A",
+      takeaway: "N/A"
     },
     {
       id: 6, title: "Think and Grow Rich", author: ["Napoleon Hill"], year: 1937, readIn: 2022, rating: 4, coverImage: "/images/6.jpg" ,
-      note: "Blank",
-      takeaway: "Blank"
+      note: "N/A",
+      takeaway: "N/A"
     },
     {
       id: 7, title: "The 7 Habits of Highly Effective People", author: ["Stephen Covey"], year: 1989, readIn: 2022, rating: 5, coverImage: "/images/7.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "N/A",
+      takeaway: "N/A"
     },
     {
       id: 8, title: "The Concise 48 Laws Of Power", author: ["Robert Greene"], year: 2002, readIn: 2022, rating: 5, coverImage: "/images/8.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "N/A",
+      takeaway: "N/A"
     },
     {
       id: 9, title: "Who Moved My Cheese?", author: ["Spencer Johnson"], year: 1998, readIn: 2022, rating: 5, coverImage: "/images/9.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "N/A",
+      takeaway: "N/A"
     },
     {
       id: 10, title: "The Mountain Is You", author: ["Brianna Wiest"], year: 2020, readIn: 2022, rating: 3, coverImage: "/images/10.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "N/A",
+      takeaway: "N/A"
     },
     {
       id: 11, title: "The Alchemist", author: ["Paulo Coelho"], year: 1988, readIn: 2022, rating: 5, coverImage: "/images/11.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "N/A",
+      takeaway: "N/A"
     },
     {
       id: 12, title: "The Strength In Our Scars", author: ["Bianca Sparacino"], year: 2017, readIn: 2022, rating: 4, coverImage: "/images/12.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "N/A",
+      takeaway: "N/A"
     },
     {
       id: 13, title: "The Psychology of Money", author: ["Morgan Housel"], year: 2020, readIn: 2022, rating: 5, coverImage: "/images/13.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "N/A",
+      takeaway: "N/A"
     },
     {
       id: 14, title: "How to Win Friends & Influence People", author: ["Dale Carnegie"], year: 1936, readIn: 2022, rating: 5, coverImage: "/images/14.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "N/A",
+      takeaway: "N/A"
     },
     {
       id: 15, title: "Ikigai", author: ["Francesc Miralles", "Hector Garcia"], year: 2018, readIn: 2022, rating: 5, coverImage: "/images/15.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "N/A",
+      takeaway: "N/A"
     },
     {
       id: 16, title: "Can't Hurt Me", author: ["David Goggins"], year: 2018, readIn: 2022, rating: 4, coverImage: "/images/16.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "N/A",
+      takeaway: "N/A"
     },
     {
       id: 17, title: "The Daily Stoic", author: ["Ryan Holiday", "Stephen Hanselman"], year: 2016, readIn: 2023, rating: 5, coverImage: "/images/17.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "N/A",
+      takeaway: "N/A"
     },
     {
       id: 18, title: "The 80/20 Principle", author: ["Richard Koch"], year: 1997, readIn: 2023, rating: 3, coverImage: "/images/18.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "N/A",
+      takeaway: "N/A"
     },
     {
       id: 19, title: "The Power of Habit", author: ["Charles Duhigg"], year: 2012, readIn: 2023, rating: 5, coverImage: "/images/19.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "N/A",
+      takeaway: "N/A"
     },
     {
       id: 20, title: "Make Today Count", author: ["John C. Maxwell"], year: 2004, readIn: 2023, rating: 4, coverImage: "/images/20.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "N/A",
+      takeaway: "N/A"
     },
     {
       id: 21, title: "Mindset", author: ["Carol Dweck"], year: 2006, readIn: 2023, rating: 5, coverImage: "/images/21.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "N/A",
+      takeaway: "N/A"
     },
     {
       id: 22, title: "Zero to One", author: ["Blake Masters", "Peter Thiel"], year: 2014, readIn: 2024, rating: 5, coverImage: "/images/22.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "N/A",
+      takeaway: "N/A"
     },
     {
       id: 23, title: "What I Wish I Knew When I Was 20", author: ["Tina Seelig"], year: 2009, readIn: 2024, rating: 5, coverImage: "/images/23.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "N/A",
+      takeaway: "N/A"
     },
     {
       id: 24, title: "The Obstacle Is the Way", author: ["Ryan Holiday"], year: 2014, readIn: 2024, rating: 5, coverImage: "/images/24.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "N/A",
+      takeaway: "N/A"
     },
     {
       id: 25, title: "Stillness Is the Key", author: ["Ryan Holiday"], year: 2019, readIn: 2024, rating: 4, coverImage: "/images/25.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "N/A",
+      takeaway: "N/A"
     },
     {
       id: 26, title: "Master Your Emotions", author: ["Thibaut Meurisse"], year: 2018, readIn: 2024, rating: 5, coverImage: "/images/26.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "N/A",
+      takeaway: "N/A"
     },
     {
       id: 27, title: "Ego Is the Enemy", author: ["Ryan Holiday"], year: 2016, readIn: 2024, rating: 4, coverImage: "/images/27.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "N/A",
+      takeaway: "N/A"
     },
     {
       id: 28, title: "Declutter Your Mind", author: ["S. J. Scott", "Barrie Davenport"], year: 2065, readIn: 2024, rating: 3, coverImage: "/images/28.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "N/A",
+      takeaway: "N/A"
     },
     {
       id: 29, title: "When Breath Becomes Air", author: ["Paul Kalanithi"], year: 2016, readIn: 2024, rating: 4, coverImage: "/images/29.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "N/A",
+      takeaway: "N/A"
     },
     {
       id: 30, title: "Limitless", author: ["Jim Kwik"], year: 2020, readIn: 2024, rating: 5, coverImage: "/images/30.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: " An inspiring book that helped me realize that a person's thinking directly influences their success and that by overcoming self-imposed limits, they can achieve greatness.",
+      takeaway: "I realized that my own limitations are often self-imposed, and that I can unlimit myself by understanding how my brain works and by rejecting unproductive habits like multitasking and passive learning."
     },
     {
       id: 31, title: "Educated", author: ["Tara Westover"], year: 2018, readIn: 2024, rating: 1, coverImage: "/images/31.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "N/A",
+      takeaway: "N/A"
     },
     {
       id: 32, title: "The Infinite Game", author: ["Simon Sinek"], year: 2019, readIn: 2024, rating: 5, coverImage: "/images/32.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "The book is an easy-to-understand guide on building a business with an \"infinite mindset,\" which prioritizes staying in the game and having a strong moral purpose over the finite goals of winning or losing.",
+      takeaway: "The book taught me that money can corrupt a business's purpose, and that true leadership is about prioritizing the well-being of your employees and viewing competition as a way to improve, not to drag others down."
     },
     {
       id: 33, title: "Talk Like TED", author: ["Carmine Gallo"], year: 2014, readIn: 2024, rating: 5, coverImage: "/images/33.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "This book teaches that effective public speaking is about sharing your ideas and passions through storytelling, rather than just presenting dry facts and information.",
+      takeaway: "The book taught me that public speaking is not something to be afraid of, but rather an art form that can be mastered by focusing on what makes a presentation a \"jaw-dropping\" and dopamine-releasing experience for the audience."
     },
     {
       id: 34, title: "Some People Need Killing", author: ["Patricia Evangelista"], year: 2023, readIn: 2024, rating: 5, coverImage: "/images/34.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "The book is a compelling and eye-opening account of the abuse of power during the former President Rodrigo Duterte’s war on drugs, revealing the inhumane realities that were hidden from the public.",
+      takeaway: "I learned that people often vote without critical thinking, making them vulnerable to political figures who abuse power and impose inhumane \"band-aid solutions\" on complex problems."
     },
     {
       id: 35, title: "Everything You Need to Ace Computer Science and Coding in One Big Fat Notebook", author: ["Grant Smith"], year: 2020, readIn: 2024, rating: 5, coverImage: "/images/35.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "A book that I wish I had discovered earlier, as it provides a solid foundation in computer science that would have been incredibly helpful during my freshman and sophomore years of college.",
+      takeaway: "I realized that I missed an opportunity to get ahead in my college studies by not having access to a simple, beginner-friendly resource that explained the core concepts of computer science."
     },
     {
       id: 36, title: "Tuesdays with Morrie Book", author: ["Mitch Albom"], year: 1997, readIn: 2024, rating: 4, coverImage: "/images/36.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "The book is about a final, life-changing class conducted between a dying teacher and his student. Their sessions, which cover topics from culture to death, serve as a final thesis on how to live a life without regret.",
+      takeaway: "The ultimate lesson of the book is that true fulfillment comes not from material wealth or a fear of aging, but from confronting life's temporality, cherishing family, and living an authentic life guided by a personal sense of purpose."
     },
     {
       id: 37, title: "Emotional Intelligence", author: ["Daniel Goleman"], year: 1995, readIn: 2024, rating: 3, coverImage: "/images/37.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "The book uses scientific research and metaphors to show that our environment and early upbringing have a profound impact on our emotional development, shaping our ability to manage emotions and interact with others.",
+      takeaway: "BlThe \"Rich Rat vs. Poor Rat\" metaphor illustrates how a stimulating environment with opportunities for growth and challenge directly influences the development of your brain. A rich, nurturing environment leads to more neural connections and greater emotional intelligence.ank"
     },
     {
       id: 38, title: "The 5AM Club", author: ["Robin Sharma"], year: 2018, readIn: 2024, rating: 5, coverImage: "/images/38.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "The book uses a fictional story to demonstrate that the primary purpose of life is growth. It provides a simple, actionable plan to achieve this by conquering your morning and taking control of your time, energy, and decisions.",
+      takeaway: "The book's core message is that growth is the most valuable pursuit. It argues that the things that feel the hardest, like waking up early or doing difficult tasks, are the most valuable for your personal development."
     },
     {
       id: 39, title: "Outliers", author: ["Malcolm Gladwell"], year: 2008, readIn: 2024, rating: 4, coverImage: "/images/39.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "The book deconstructs the myth of the \"self-made man,\" arguing that extraordinary success is not just a result of individual talent and hard work, but also depends on a series of lucky circumstances, timing, and unique opportunities.",
+      takeaway: "While hard work is a necessary ingredient for success, it is not the only one. The book demonstrates that even the most dedicated people, like the Beatles or Bill Gates, needed extraordinary luck and access to resources that were not available to everyone."
     },
     {
       id: 40, title: "Surrounded by Idiots", author: ["Thomas Erikson"], year: 2014, readIn: 2024, rating: 3, coverImage: "/images/40.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "This book teaches that what you consider \"right\" or \"wrong\" is subjective and often based on your personality type. It provides a framework for recognizing and appreciating the value of different personality types in communication, relationships, and teamwork.",
+      takeaway: "You often perceive people as \"idiots\" because they think and act differently than you. The book helps you understand that this feeling is a result of a lack of empathy and an inability to recognize that your way of doing things is not the only valid one."
     },
     {
       id: 41, title: "21 Lessons for the 21st Century", author: ["Yuval Noah Harari"], year: 2018, readIn: 2024, rating: 5, coverImage: "/images/41.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "This is a thought-provoking book that questions how we view the world, arguing that much of what we accept as truth from religion to social media is based on human-created stories, rituals, and biases..",
+      takeaway: "A central theme is that what we call \"truth\" is often just a story or ritual that enough people believe in. This applies to religions, social norms, and even social media, which creates an \"illusion\" of reality to fit a narrative."
     },
     {
       id: 42, title: "The Art of Thinking Clearly", author: ["Rolf Dobelli"], year: 2011, readIn: 2024, rating: 2, coverImage: "/images/42.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "This is a collection of confusing and often disconnected chapters on why we make poor choices, revealing how our brains are wired to prefer bad information over none at all, and to fall for conformity and instant gratification.",
+      takeaway: " Your brain is wired with biases that are often invisible, like the \"swimmers' body\" bias where you credit someone's success to hard work without acknowledging their natural advantages. This applies to everything from how you view people to how you consume news."
     },
     {
       id: 43, title: "The Monk Who Sold His Ferrari", author: ["Robin Sharma"], year: 1996, readIn: 2024, rating: 5, coverImage: "/images/43.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "This book is a motivational fiction that provides a roadmap to a better life by emphasizing the importance of daily rituals, self-discipline, and the unwavering belief that your life's greatest obstacles are the ones you create for yourself.",
+      takeaway: "The state of your life is a direct reflection of your mind. By nurturing it with positive thoughts and disciplined habits, you can transform your reality and achieve your goals."
     },
     {
       id: 44, title: "The Book of Ichigo Ichie", author: ["Hector Garcia", "Francesc Miralles"], year: 2019, readIn: 2024, rating: 5, coverImage: "/images/44.jpg",
@@ -348,8 +348,8 @@ export function getBooks() {
     },
     {
       id: 70, title: "The 5AM Club", author: ["Robin Sharma"], year: 2018, readIn: 2025, rating: 5, coverImage: "/images/70.jpg",
-      note: "Blank",
-      takeaway: "Blank"
+      note: "N/A",
+      takeaway: "N/A"
     }
   ];
 }
