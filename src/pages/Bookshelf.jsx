@@ -17,9 +17,10 @@ export default function Bookshelf() {
     const q = searchQuery.toLowerCase();
     return (
       book.title.toLowerCase().includes(q) ||
-      book.author.join(", ").toLowerCase().includes(q) ||
-      book.note.toLowerCase().includes(q) ||
-      book.takeaway.toLowerCase().includes(q)
+      book.author.join(", ").toLowerCase().includes(q) 
+      // ||
+      // book.note.toLowerCase().includes(q) ||
+      // book.takeaway.toLowerCase().includes(q)
     );
   });
 
@@ -125,7 +126,7 @@ export default function Bookshelf() {
               <div className={styles.searchInputWrapper}>
                 <input
                   type="text"
-                  placeholder="Search books by title, author, notes, or takeaways..."
+                  placeholder="Search books by title or author"
                   value={searchQuery}
                   onChange={(e) => handleSearchChange(e.target.value)}
                   className={styles.searchInput}

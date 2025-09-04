@@ -350,6 +350,11 @@ export function getBooks() {
       id: 70, title: "The 5AM Club", author: ["Robin Sharma"], year: 2018, readIn: 2025, rating: 5, coverImage: "/images/70.jpg",
       note: "N/A",
       takeaway: "N/A"
+    },
+    {
+      id: 71, title: "Your Next Five Moves", author: ["Greg Dinkin", "Patrick Bet-David"], year: 2020, readIn: 2025, rating: 5, coverImage: "/images/71.jpg",
+      note: "N/A",
+      takeaway: "N/A"
     }
   ];
 }

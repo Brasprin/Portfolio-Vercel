@@ -2,7 +2,19 @@
 import styles from '../styles/Projects.module.css';
 
 const Projects = () => {
-  const projects = [
+  // Personal Projects
+  const personalProjects = [
+    {
+      title: "Coming Soon",
+      link: "#", 
+      description:
+        "Test Description."
+    },
+    
+  ];
+
+  // School Projects
+  const schoolProjects = [
     {
       title: 'Distributed System Recovery',
       link: 'https://github.com/Brasprin/Machine-Projects/tree/main/Concurrency_MasterSlaveRecovery',
@@ -16,10 +28,22 @@ const Projects = () => {
         'This project focuses on analyzing data from the Adidas webstore to generate insights and predictions. Using data science techniques such as data preprocessing, exploratory data analysis (EDA), and machine learning, we transformed raw data into meaningful information. The goal was to uncover patterns and provide analytics that support decision-making.',
     },
     {
+      title: 'CLI-Based Operating System',
+      link: 'https://github.com/Ayrishie/MO1-IRISH/tree/Final',
+      description:
+        'This project is a console-based operating system emulator that simulates core OS functionalities. It supports process management, scheduling with Round-Robin and FCFS algorithms, memory allocation using the first-fit strategy, and backing store operations. Upon process completion, detailed logs are generated, showing executed operations such as arithmetic calculations and memory read/write actions. The emulator demonstrates the fundamental workings of an operating system in a controlled console environment.',
+    },
+    {
       title: 'Laboratory Reservation System',
       link: 'https://github.com/Brasprin/Machine-Projects/tree/main/LaboratoryReservationSystem',
       description:
         'This project is a web-based Laboratory Reservation System designed for Lasallians. It allows users to register and log in to book specific seats for available time slots in various laboratory rooms. Each reservation is associated with the user’s account to ensure accountability and traceability. User authentication is secured using password hashing and cookie-based session management. Administrators have the ability to create accounts and make bookings for walk-in students. Additionally, users can update their profile information, including their description and profile photo. The system was implemented using HTML, CSS, Handlebars, and JavaScript for the front end, while MongoDB was used for the database.',
+    },
+    {
+      title: 'Payroll System (Refactored)',
+      link: 'https://ledgerly-ochre.vercel.app/',
+      description:
+        'This project refactors an existing client-based payroll system into a generalized, scalable solution suitable for small businesses. The system was migrated from MySQL to MongoDB to improve flexibility and performance. DevOps practices were applied, including CI/CD pipelines, GitFlow for version control, and automated QA testing using Robot Framework. Continuous deployment was implemented, with the system deployed through Vercel.',
     },
     {
       title: 'Client Oriented Payroll System',
@@ -52,27 +76,44 @@ const Projects = () => {
         'This project implements a vending machine simulation using Object-Oriented Programming (OOP). It simulates a real-world vending machine scenario where users can insert money, select items, and receive change. The system follows OOP principles such as encapsulation, inheritance, polymorphism, and abstraction, ensuring a structured and modular design.',
     },
   ];
+  
+  const renderProjects = (projects) =>
+    projects.map((proj, index) => (
+      <div key={index} className={styles.project}>
+        <h2>
+          <span
+            className={styles.projectLink}
+            onClick={() => window.open(proj.link, "_blank")}
+          >
+            {proj.title}
+          </span>
+        </h2>
+        <p className={styles.description}>{proj.description}</p>
+        {index !== projects.length - 1 && <hr />}
+      </div>
+    ));
 
   return (
     <>
-      <div className={styles.title}>
-        <h1>School Projects</h1>
-      </div>
+      {/* Personal Projects */}
+      {/* {personalProjects.length > 0 && (
+        <>
+          <div className={styles.title}>
+            <h1>Personal Projects</h1>
+          </div>
+          {renderProjects(personalProjects)}
+        </>
+      )} */}
 
-      {projects.map((proj, index) => (
-        <div key={index} className={styles.project}>
-          <h2>
-            <span
-              className={styles.projectLink}
-              onClick={() => window.open(proj.link, '_blank')}
-            >
-              {proj.title}
-            </span>
-          </h2>
-          <p>{proj.description}</p>
-          {index !== projects.length - 1 && <hr />}
-        </div>
-      ))}
+      {/* School Projects */}
+      {schoolProjects.length > 0 && (
+        <>
+          <div className={styles.title}>
+            <h1>School Projects</h1>
+          </div>
+          {renderProjects(schoolProjects)}
+        </>
+      )}
     </>
   );
 };

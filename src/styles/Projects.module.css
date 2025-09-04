@@ -56,3 +56,7 @@
 .projectLink:hover::before {
   width: 100%;
 }
+
+.description {
+  text-align: justify;
+}
