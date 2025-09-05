@@ -28,14 +28,13 @@ export default function BurgerButton({ setMobileOpen, sidebarOpen }) {
     };
   }, [hidden]);
 
-  // Hide instantly when sidebar opens, show when it closes
   useEffect(() => {
     setHidden(sidebarOpen);
   }, [sidebarOpen]);
 
   const handleClick = () => {
     setMobileOpen(true);
-    setHidden(true); // hide instantly on click
+    setHidden(true); 
   };
 
   return (
