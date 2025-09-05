@@ -104,6 +104,8 @@ section {
   width: 100%;
   border-collapse: collapse;
   margin-top: -1rem;
+  table-layout: fixed; 
+  
 }
 
 .coursesTable th,
@@ -111,7 +113,20 @@ section {
   border: 1px solid #ccc;
   padding: 0.6rem 0.8rem;
   text-align: left;
+  word-wrap: break-word;
 }
+
+.coursesTable th:first-child,
+.coursesTable td:first-child {
+  width: 25%; /* Course Code smaller */
+}
+
+.coursesTable th:last-child,
+.coursesTable td:last-child {
+  width: 75%; /* Course Name larger */
+}
+
+
 
 .coursesTable th {
   background-color: #f4f4f4;
@@ -146,11 +161,6 @@ li {
   }
 }
 
-@media (max-width: 900px) {
-  .coursesRow {
-    flex-direction: column;
-  }
-}
 
 /* To remove */
 

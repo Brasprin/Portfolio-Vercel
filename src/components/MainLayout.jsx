@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Sidebar from './Sidebar';
 import MobileSidebar from './MobileSidebar';
+import BurgerButton from './BurgerButton'; // import the new component
 import { Outlet } from 'react-router-dom';
 
 export default function MainLayout() {
@@ -17,8 +18,14 @@ export default function MainLayout() {
 
       <div className="pageContainer">
         <main className="main-content">
-          {/* Burger button */}
-          <button id="mobile-sidebarToggle"  class="sidebar-toggle-btn" onClick={() => setMobileOpen(o => !o)} > ☰ </button>
+          {/* Replace inline button with BurgerButton */}
+          <div className="burger-header stickyutton">
+            <BurgerButton 
+              setMobileOpen={setMobileOpen} 
+              sidebarOpen={mobileOpen} 
+            />
+          </div>
+
           <Outlet />
         </main>
       </div>

@@ -46,10 +46,12 @@ const Contact = () => {
         <input type="email" id="email" name="email" required />
 
         <label htmlFor="message">Message</label>
-        <textarea id="message" name="message" rows="5" required onInput={handleAutoResize} />
+        
+        <textarea id="message" name="message" rows={5} required onInput={handleAutoResize} />
+
           
           
-        <label for="role">Contacting as</label>
+        <label htmlFor="role">Contacting as</label>
           <select id="role" name="role" required>
             <option value="">Select one</option>
             <option value="Student">Student</option>
