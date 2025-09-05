@@ -118,12 +118,12 @@ section {
 
 .coursesTable th:first-child,
 .coursesTable td:first-child {
-  width: 25%; /* Course Code smaller */
+  width: 30%; /* Course Code smaller */
 }
 
 .coursesTable th:last-child,
 .coursesTable td:last-child {
-  width: 75%; /* Course Name larger */
+  width: 70%; /* Course Name larger */
 }
 
 

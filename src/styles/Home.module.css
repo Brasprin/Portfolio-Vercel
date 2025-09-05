@@ -14,6 +14,7 @@
     flex-direction: column;
     justify-content: center;
     margin-right: 3rem;
+    
 }
 
 .profile {
@@ -53,12 +54,20 @@ h1 {
     margin: 0;
 }
 
-@media (max-width: 1768px) { 
+.subtitle, .description{
+  text-align: justify;       
+  text-justify: inter-word;
+}
+
+
+@media (max-width: 768px) { 
   .content {
+    margin-top: 1rem;
     flex-direction: column;     
     align-items: center;       
     padding: 2rem 1rem;   
-    gap: 1.5rem;               
+    gap: 1.5rem;            
+    align-items: flex-start;   
   }
 
   .textSection,
@@ -72,12 +81,12 @@ h1 {
 
   .profile {
     display: flex;            
-    justify-content: center; 
+    justify-content: flex-start; 
     align-items: center;      
   }
 
   .profile img {
-    width: 20rem;             
+    width: 25rem;             
     height: auto;
   }
 }
