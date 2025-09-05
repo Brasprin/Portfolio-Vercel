@@ -41,7 +41,7 @@
   flex-wrap: wrap;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 100px) {
   .controlsContainer {
     flex-direction: column;  
     align-items: stretch;    
@@ -240,7 +240,7 @@
 }
 
 /* Responsive Pagination */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .pagination {
     gap: 4px;
   }
@@ -492,7 +492,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .container {
     padding: 16px;
   }
