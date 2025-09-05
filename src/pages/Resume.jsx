@@ -133,7 +133,7 @@ export default function Resume() {
       </section>
 
       <section className={styles.downloadResume}>
-        <a href="/resume.pdf" download="Andrei_Tamse_Resume.pdf">
+        <a href="/AndreiTamse_Resume.pdf" download="AndreiTamse_Resume.pdf">
           <button>Download Resume</button>
         </a>
       </section>
